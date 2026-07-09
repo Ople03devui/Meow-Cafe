@@ -1,0 +1,61 @@
+/* ตั้งค่าฟอนต์และพื้นหลังโทนอุ่น */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf6ec; /* สีครีมอุ่นๆ */
+    color: #4a3728; /* สีน้ำตาลเข้ม */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* ส่วนหัวเว็บ */
+header {
+    background-color: #8401e1; /* สีส้มพาสเทล */
+    color: white;
+    padding: 2rem;
+}
+
+/* จัดตำแหน่งการ์ดแมวให้อยู่ตรงกลางและเรียงกัน */
+.cat-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* การ์ดน้องแมวแต่ละตัว */
+.cat-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 220px;
+    transition: transform 0.2s;
+}
+
+.cat-card:hover {
+    transform: translateY(-5px); /* เลื่อนขึ้นนิดหน่อยตอนเอาเมาส์ชี้ */
+}
+
+.cat-card img {
+    border-radius: 50%; /* ทำรูปโปรไฟล์วงกลม */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* ปุ่มกด */
+.meow-btn {
+    background-color: #8401e1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.meow-btn:hover {
+    background-color: #8401e1;
+}
